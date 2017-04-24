@@ -1,12 +1,10 @@
 <h1>{{title}}</h1>
-<h2>{{hero.name}} details!</h2>
-<div>
-  <div>
-    <label>id: </label>
-    <span>{{hero.id}}</span>
-  </div>
-  <div>
-    <label>name: </label>
-    <input [(ngModel)]="hero.name">
-  </div>
-</div>
+<nav>
+  <ul>
+    <a routerLink="dashboard" [routerLinkActive]="'active'">Dashboard</a>
+    <a routerLink="heroes" [routerLinkActive]="'active'">Heroes</a>
+  </ul>
+
+</nav>
+
+<router-outlet></router-outlet>
